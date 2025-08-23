@@ -24,8 +24,8 @@ automation-prestashop/
 
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
-cd automation
+git clone "https://github.com/isubarnaL/automation-prestashop.git"
+cd automation-prestashop
 ```
 
 ### 2. Create a virtual environment
