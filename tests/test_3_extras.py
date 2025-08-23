@@ -11,6 +11,7 @@ from utils.test_data import make_customer
 def test_max_quantity_out_of_stock(driver):
     """Verify if setting an excessive quantity triggers out-of-stock message."""
     # OpenPrestaShop
+    open_storefront(driver)
     logging.info("Opened PrestaShop store")
 
     # Initialize home page
