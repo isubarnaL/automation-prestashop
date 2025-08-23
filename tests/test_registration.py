@@ -7,7 +7,7 @@ import time
 import logging
 
 @pytest.mark.usefixtures("driver")
-def test_registration(driver):
+def test_registration_login(driver):
     # Open ephemeral PrestaShop storefront
     open_storefront(driver)
 

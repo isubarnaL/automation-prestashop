@@ -6,16 +6,12 @@ from pages.auth_page import AuthPage
 from pages.checkout_page import CheckoutPage
 from utils.storefront import open_storefront
 from utils.test_data import make_customer
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 @pytest.mark.usefixtures("driver")
 def test_max_quantity_out_of_stock(driver):
     """Verify if setting an excessive quantity triggers out-of-stock message."""
-    # Open ephemeral PrestaShop storefront
-    open_storefront(driver)
-    logging.info("Opened PrestaShop storefront")
+    # OpenPrestaShop
+    logging.info("Opened PrestaShop store")
 
     # Initialize home page
     home = HomePage(driver)

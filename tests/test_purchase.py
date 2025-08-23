@@ -32,7 +32,7 @@ def test_purchase_flow(driver):
 
     # Product selection & cart
     checkout.select_first_product()
-    time.sleep(3)
+    time.sleep(1)
     checkout.add_product_to_cart()
     time.sleep(3)
     checkout.go_to_checkout_from_modal()
